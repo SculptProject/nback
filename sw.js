@@ -1,19 +1,19 @@
 // Service worker : rend l’application utilisable hors connexion.
 // Pense à changer VERSION à chaque modification d’un fichier, pour que les téléphones récupèrent la nouvelle version.
-const VERSION = 'nback-v1';
+const VERSION = 'nback-v2';
 const FILES = [
   './',
   './index.html',
   './manifest.webmanifest',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './icons/icon-maskable-512.png',
-  './icons/apple-touch-icon.png',
-  './icons/favicon-32.png',
-  './fonts/sora-400.woff2',
-  './fonts/sora-500.woff2',
-  './fonts/sora-600.woff2',
-  './fonts/sora-700.woff2'
+  './icon-192.png',
+  './icon-512.png',
+  './icon-maskable-512.png',
+  './apple-touch-icon.png',
+  './favicon-32.png',
+  './sora-400.woff2',
+  './sora-500.woff2',
+  './sora-600.woff2',
+  './sora-700.woff2'
 ];
 
 self.addEventListener('install', event => {
